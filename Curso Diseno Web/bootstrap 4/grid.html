@@ -2,58 +2,151 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Grid de Bootstrap 4</title>
+	<title>Grid de Bootstrap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, 
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+
 	<style>
-		.row > div {
-			background: #f2f2f2;
-			margin-top: 20px;
+		.encabezado {
+			background:#452745;
+			color:#fff;
+			margin-bottom: 20px;
 		}
+
+		.main {
+			background:#f2f2f2;
+			margin-bottom: 20px;
+		}
+
+		aside {
+			background:#FF5F49;
+			color:#fff;
+		}
+
+		.widgets {
+			margin-bottom: 20px;
+		}
+
+		.widget {
+			background: #f2f2f2;
+		}
+
+		.color {
+			background: #d2d2d2;
+		}
+
+		footer {
+			background:#452745;
+			color:#fff;
+		}
+
+
 	</style>
+
 </head>
 <body>
-	<!-- El container es el contenedor principal, en el iran todas las filas y columnas -->
-	<!-- Con el container podemos centrar nuestra pagina -->
+
+<!--
+	Medidas 			Dispositivo
+	==============================================
+	xs - Extra Small 	Telefonos y MENOS de 768px
+	sm - Small  		Tablets y MAS de 768px
+	md - Medium  		Computadoras y MAS de 992px
+	lg - Large	 		Computadoras, Pantallas y MAS de 1200px
+-->
+
 	<div class="container">
-		<div class="row">
-			<!-- Y las columnas deben ir directamente dentro de las filas (row) -->
-			<!-- Todo el contenido debe ir dentro de columnas (col) -->
-
-			<!-- NUEVO:
-					Los tamaños de Columna en Bootsrap 4 son:
-					.col 		Extra Pequeño (Extra Small) - Smartphones Vertical		Menos de 544px
-					.col-sm 	Pequeño (Small) - Smartphones Vertical	 				Mas de 544px y Menos de 768px
-					.col-md 	Mediano (Medium) - Tablets 								Mas de 768px y Menos de 992px
-					.col-lg 	Largo (Large) - Computadoras							Mas de 992px y Menos de 1200px
-					.col-xl 	Extra Largo (Extra Large) - Computadoras				Mas de 1200px
-			 -->
-			<div class="col-12 col-md-6">
-				<h2>Columna 1</h2>
+		<header class="row">
+			<div class="encabezado col-md-12">
+				<h1>Header</h1>
+				<h4>12 Columnas</h4>
+			</div>
+		</header>
+		<section class="main row">
+			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+				<h2>Articulo - Article</h2>
+				<h4 class="visible-xs">12 Columnas</h4>
+				<h4 class="visible-sm">8 Columnas</h4>
+				<h4 class="visible-md">9 Columnas</h4>
+				<h4 class="visible-lg">9 Columnas</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-			</div>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-			<div class="col-12 col-md-6">
-				<h2>Columna 2</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-			</div>
-		</div>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
 
-		<div class="row">
-			<div class="col">
-				<h1>Hola Mundo</h1>
+			<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+				<h3>Sidebar</h3>
+				<h4 class="visible-xs">12 Columnas</h4>
+				<h4 class="visible-sm">4 Columnas</h4>
+				<h4 class="visible-md">3 Columnas</h4>
+				<h4 class="visible-lg">3 Columnas</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</aside>
+		</section>
+
+		<section class="widgets row">
+			<div class="widget col-xs-12 col-sm-6 col-md-3">
+				<h3>Widget</h3>
+				<h4 class="visible-xs">12 Columnas</h4>
+				<h4 class="visible-sm">6 Columnas</h4>
+				<h4 class="visible-md">3 Columnas</h4>
+				<h4 class="visible-lg">3 Columnas</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium exercitationem fugit, sed rem atque consectetur cupiditate dolorum accusamus, sunt a.</p>
 			</div>
-		</div>
+
+			<div class="widget color col-xs-12 col-sm-6 col-md-3">
+				<h3>Widget</h3>
+				<h4 class="visible-xs">12 Columnas</h4>
+				<h4 class="visible-sm">6 Columnas</h4>
+				<h4 class="visible-md">3 Columnas</h4>
+				<h4 class="visible-lg">3 Columnas</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium exercitationem fugit, sed rem atque consectetur cupiditate dolorum accusamus, sunt a.</p>
+			</div>
+
+			<div class="widget col-xs-12 col-sm-6 col-md-3">
+				<h3>Widget</h3>
+				<h4 class="visible-xs">12 Columnas</h4>
+				<h4 class="visible-sm">6 Columnas</h4>
+				<h4 class="visible-md">3 Columnas</h4>
+				<h4 class="visible-lg">3 Columnas</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium exercitationem fugit, sed rem atque consectetur cupiditate dolorum accusamus, sunt a.</p>
+			</div>
+
+			<div class="widget color col-xs-12 col-sm-6 col-md-3">
+				<h3>Widget</h3>
+				<h4 class="visible-xs">12 Columnas</h4>
+				<h4 class="visible-sm">6 Columnas</h4>
+				<h4 class="visible-md">3 Columnas</h4>
+				<h4 class="visible-lg">3 Columnas</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium exercitationem fugit, sed rem atque consectetur cupiditate dolorum accusamus, sunt a.</p>
+			</div>
+		</section>
+
+		<footer class="row">
+			<div class="col-md-12">
+				<h3>Footer</h3>
+				<h4>12 Columnas</h4>
+			</div>
+		</footer>
 	</div>
 	
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
+	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -2,68 +2,57 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alertas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, 
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+
+	
 	<div class="container">
 		<div class="row">
-			<div class="col">
-				<div class="alert alert-success mt-3">
-					<p class="mb-0"><strong>Aviso!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link">consectetur</a> adipisicing.</p>
-				</div>
-
-				<div class="alert alert-info mt-3">
-					<p class="mb-0"><strong>Aviso!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link">consectetur</a> adipisicing.</p>
-				</div>
-
-				<div class="alert alert-warning mt-3">
-					<p class="mb-0"><strong>Aviso!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link">consectetur</a> adipisicing.</p>
-				</div>
-
-				<div class="alert alert-danger mt-3">
-					<p class="mb-0"><strong>Aviso!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link">consectetur</a> adipisicing.</p>
-				</div>
-
-				<div class="alert alert-primary mt-3">
-					<p class="mb-0"><strong>Aviso!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link">consectetur</a> adipisicing.</p>
-				</div>
-
-				<div class="alert alert-secondary mt-3">
-					<p class="mb-0"><strong>Aviso!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link">consectetur</a> adipisicing.</p>
-				</div>
-
-				<div class="alert alert-dark mt-3">
-					<p class="mb-0"><strong>Aviso!</strong> Lorem ipsum dolor sit amet, <a href="#" class="alert-link">consectetur</a> adipisicing.</p>
-				</div>
-
-				<div class="alert alert-success mt-5">
-					<h2>Encabezado</h2>
-					<p class="mb-0">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<div class="col-md-12">
+				<h2>Mensajes de Alertas</h2>
+				<div class="alert alert-success">
+					<p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing.
+						<a class="alert-link" href="#">Link</a>
 					</p>
 				</div>
 
-				<div class="alert alert-success mt-5">
-					<p class="mb-0">
-						Lorem ipsum dolor sit amet consectetur adipisicing.
-						<button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
-							<span aria-hidden="true">&times;</span>
-						</button>
+				<div class="alert alert-info">
+					<p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing.
+						<a class="alert-link" href="#">Link</a>
 					</p>
 				</div>
+
+				<div class="alert alert-warning">
+					<p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing.
+						<a class="alert-link" href="#">Link</a>
+					</p>
+				</div>
+
+				<div class="alert alert-danger">
+					<p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing.
+						<a class="alert-link" href="#">Link</a>
+					</p>
+				</div>
+
+				<hr>
+				<h2>Alertas con Javascript</h2>
+			
+				<div class="alert alert-warning alert-dismisible">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing.
+						<a class="alert-link" href="#">Link</a>
+					</p>
+				</div>
+
 			</div>
 		</div>
 	</div>
 	
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
+	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
